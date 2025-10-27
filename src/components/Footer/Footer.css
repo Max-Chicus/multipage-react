@@ -1,0 +1,13 @@
+.footer {
+    padding-top: 42px;
+    padding-bottom: 42px;
+}
+
+.footer__container {
+    justify-content: flex-end;
+}
+
+.footer__list {
+    display: flex;
+    gap: 24px;
+}

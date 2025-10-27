@@ -1,0 +1,41 @@
+.trailer-modal {
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.85);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1200;
+}
+
+.trailer-modal__content {
+    position: relative;
+    width: 960px;
+    height: 540px;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    background-color: rgba(57, 59, 60, 1);
+}
+
+.trailer-modal__close-button {
+    position: absolute;
+    top: 0;
+    right: -70px;
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    border: none;
+    background: rgba(255, 255, 255, 1);
+    color: rgba(0, 0, 0, 1);
+    font-size: 20px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.3);
+    transition: 0.2s;
+    z-index: 1100;
+}
+
+.trailer-modal__close-button:hover {
+    background: rgba(103, 165, 235, 1);
+}

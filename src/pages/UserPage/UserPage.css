@@ -1,0 +1,155 @@
+.user-page {
+    padding-top: 64px;
+    padding-bottom: 64px;
+}
+
+.user-page__container {
+    flex-direction: column;
+}
+
+.user-page__title {
+    margin-bottom: 64px;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 56px;
+    color: rgba(255, 255, 255, 1);
+}
+
+.user-page__tabs {
+    margin-bottom: 64px;
+    display: flex;
+    gap: 64px;
+}
+
+.user-page__tab {
+    position: relative;
+    display: flex;
+    gap: 4px;
+    padding: 0;
+    align-items: center;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 32px;
+    background: none;
+    border: none;
+    color: rgba(255, 255, 255, 1);
+}
+
+.user-page__tab::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    width: 0;
+    height: 2px;
+    background-color: rgba(220, 93, 252, 1);
+    transition: width 0.4s ease;
+}
+
+.user-page__tab.active::after {
+    width: 100%;
+}
+
+/* --- Избранные --- */
+.favorites__list {
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 40px;
+    row-gap: 64px;
+}
+
+.favorites__item {
+    position: relative;
+    width: 17.5%;
+    min-height: 336px;
+    transition: transform 0.3s ease;
+}
+
+.favorites__poster {
+    width: 100%;
+    height: 100%;
+    border-radius: 8px;
+    transition: transform 0.3s ease;
+    z-index: 1;
+}
+
+.favorites__item:hover .favorites__poster {
+    transform: scale(1.03);
+}
+
+/* Кнопка удаления */
+.favorites__remove {
+    position: absolute;
+    top: -20px;
+    right: -20px;
+    background: none;
+    border: none;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+    cursor: pointer;
+    z-index: 10;
+}
+
+/* Показываем крестик при наведении */
+.favorites__item:hover .favorites__remove {
+    opacity: 1;
+    visibility: visible;
+}
+
+.favorites__remove svg:hover rect {
+    fill: rgba(220, 93, 252, 1);
+    transition: fill 0.2s ease;
+}
+
+/* settings */
+.settings__list {
+    margin-bottom: 64px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 40px;
+}
+
+.settings__item {
+    display: flex;
+    column-gap: 16px;
+}
+
+.settings__item-avatar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 60px;
+    height: 60px;
+    background-color: rgba(255, 255, 255, 0.5);
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 32px;
+    color: rgba(255, 255, 255, 1);
+    border-radius: 30px;
+}
+
+.settings__item-label {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 24px;
+    color: rgba(255, 255, 255, 1);
+}
+
+.settings__item-value {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 32px;
+    color: rgba(255, 255, 255, 1);
+}
+
+.settings__logout {
+    padding: 16px 48px;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 24px;
+    color: rgba(255, 255, 255, 1);
+    background-color: rgba(103, 165, 235, 1);
+    border: none;
+    border-radius: 28px;
+}

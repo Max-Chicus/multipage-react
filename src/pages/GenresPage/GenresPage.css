@@ -1,0 +1,56 @@
+.genres-page {
+    padding-top: 64px;
+}
+
+.genres__container {
+    flex-direction: column;
+}
+
+.genres__title {
+    margin-bottom: 64px;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 56px;
+    color: rgba(255, 255, 255, 1);
+}
+
+.genres__list {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    column-gap: 40px;
+    row-gap: 64px;
+}
+
+.genres__item {
+    max-width: 290px;
+    width: 22.4%;
+    border: 1px solid rgba(255, 255, 255, 0.25);
+    border-radius: 24px;
+    box-shadow: 0px 0px 80px 0px rgba(255, 255, 255, 0.33);
+    background-color: rgba(10, 11, 11, 1);
+}
+
+.genres__card-img {
+    margin-bottom: 22px;
+}
+
+.genres__poster {
+    border-radius: 24px 24px 0 0;
+    width: 100%;
+    height: 220px;
+}
+
+.genres__card-text {
+    padding-bottom: 30px;
+    display: flex;
+    justify-content: center;
+}
+
+.genres__card-title {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 32px;
+    color: rgba(255, 255, 255, 1);
+    text-transform: capitalize;
+}
