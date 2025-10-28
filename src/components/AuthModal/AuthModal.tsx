@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { login, register, getProfile } from "../../api/auth";
 import { useAuth } from "../../context/AuthContext";
+import logo from "../../assets/images/auth-logo.svg"
 import "./AuthModal.css";
 
 interface AuthModalProps {
@@ -65,7 +66,7 @@ export function AuthModal({ isOpen, onClose }: AuthModalProps) {
                         </svg>
                     </button>
 
-                    <img src="src/assets/images/auth-logo.svg" alt="logo" className="auth-modal__logo" />
+                    <img src={logo} alt="logo" className="auth-modal__logo" />
                     <h2 className="auth-modal__title">Регистрация завершена</h2>
                     <p className="auth-modal__text">Используйте вашу электронную почту для входа</p>
                     <button
